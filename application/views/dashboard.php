@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="<?php echo base_url('assets/dist/css/style.css') ?>">
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -19,7 +19,38 @@
       <!-- Small boxes (Stat box) -->
       <?php if($is_admin == true): ?>
 
-        <div class="row">
+        <div class="transactions-wrapper">
+          <a href="<?php echo base_url('products/') ?>" class="transactions-link">
+            <div class="transactions-box">
+              <img src="./assets/dist/img/total-products.png" alt="Total products">
+              <span class="transactions-title transactions-title-visible">TOTAL PRODUCTS (<?php echo $total_products ?>)</span>
+              <span class="transactions-title transactions-title-invisible">VIEW</span>
+            </div>
+          </a>
+          <a href="<?php echo base_url('orders/') ?>" class="transactions-link">
+            <div class="transactions-box">
+              <img src="./assets/dist/img/total-paid-orders.png" alt="Total paid orders">
+              <span class="transactions-title transactions-title-visible">TOTAL PAID ORDERS (<?php echo $total_paid_orders ?>)</span>
+              <span class="transactions-title transactions-title-invisible">VIEW</span>
+            </div>
+          </a>
+          <a href="<?php echo base_url('users/') ?>" class="transactions-link">
+            <div class="transactions-box">
+              <img src="./assets/dist/img/total-users.png" alt="Total users">
+              <span class="transactions-title transactions-title-visible">TOTAL USERS (<?php echo $total_users; ?>)</span>
+              <span class="transactions-title transactions-title-invisible">VIEW</span>
+            </div>
+          </a>
+          <a href="<?php echo base_url('reports/') ?>" class="transactions-link">
+            <div class="transactions-box">
+              <img src="./assets/dist/img/total-sales.png" alt="Total users">
+              <span class="transactions-title transactions-title-visible">TOTAL SALES</span>
+              <span class="transactions-title transactions-title-invisible">VIEW</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="row" style="display: none;">
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
             <div class="small-box bg-aqua">

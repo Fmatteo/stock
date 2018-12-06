@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Lobster Two', cursive;
+    src: local('Lobster Two'), local('Lobster Two'), url(../fonts/LobsterTwo-Regular.ttf) format('ttf');
+}
+
+/* LOGIN PAGE STYLE START */
+
+.header-login {
+    background-image: linear-gradient(to right, rgba(5, 0, 78, .7),rgba(5, 0, 78, .5)), url(../img/bg.jpg);
+    background-size: cover;
+    height: 100% !important;
+    overflow: hidden;
+}
+
+.login-box {
+    background-color: #f2f7ff;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.login-box-body {
+    background-color: #f2f7ff;
+}
+
+.login-heading {
+    padding-top: 25px;
+}
+
+.login-primary {
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.login-secondary {
+    font-size: 18px;
+}
+
+.checkbox-center {
+    text-align: center;
+}
+
+.btn-login {
+    background-color:#0b409c;
+    border: 0;
+    border-radius: 10px !important;
+    transition: all .2s;
+}
+
+.btn-login:hover {
+    background-color: #10316b;
+}
+
+html {
+    background-image: linear-gradient(to left, #10316b, #0b409c);
+}
+
+/* LOGIN PAGE STYLE END */
+
+/* DASHBOARD BOXES START */
+.transactions-link {
+    display: inline-block;
+  }
+
+  .transactions-box {
+    background-image: linear-gradient(to right, #10316b, #0b409c);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .transactions-box:hover .transactions-title-visible {
+    transform: translateX(-100%);
+    transition: all .5s;
+  }
+
+  .transactions-box:hover .transactions-title-invisible {
+    right: 0;
+    transition: all .5s;
+  }
+
+  .transactions-title {
+    color: white;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 17px;
+    margin: 10px 0 0 0;
+    background-color: #1f3c88;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-variant: bold;
+  }
+
+  .transactions-title-invisible {
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    right: -100%;
+  }
+
+  .transaction-title-visible {
+    width: 100%;
+  }
+
+  .transactions-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  /* DASHBOARD BOXES END */
+
+  .header-title {
+      font-size: 25px;
+      color: #182952;
+      text-align: center;
+      margin: 0;
+      padding-top: 10px;
+  }

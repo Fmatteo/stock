@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/AdminLTE.min.css') ?>">
   <!-- iCheck -->
   <link rel="stylesheet" href="<?php echo base_url('assets/plugins/iCheck/square/blue.css') ?>">
+   <!-- Customized css -->
+  <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/style.css') ?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,9 +33,16 @@
 
 </head>
 <body class="hold-transition login-page">
+
+<header class="header-login">
+
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url('auth'); ?>"><b>Login</b></a>
+    <!--<a href="<?php echo base_url('auth'); ?>"><b>Login</b></a>-->
+    <div class="login-heading"> 
+        <h1 class="login-primary"> WELCOME </h1>
+        <h2 class="login-secondary"> Stock Management System </h2> 
+      </div>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -55,16 +64,16 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
+        <div class="col-md-12">
+          <div class="checkbox icheck checkbox-center">
             <label>
               <input type="checkbox"> Remember Me
             </label>
           </div>
         </div>
         <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary btn-block btn-flat btn-login">Log In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -74,6 +83,8 @@
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
+
+</div>
 
 <!-- jQuery 3 -->
 

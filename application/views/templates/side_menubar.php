@@ -1,3 +1,13 @@
+<style>
+  a {
+    font-size: 12px;
+  }
+
+  .treeview-menu>li>a {
+    font-size: 11.5px;
+  }
+</style>
+
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
